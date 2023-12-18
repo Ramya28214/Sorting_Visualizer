@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link href="C:\Users\raman\OneDrive\Desktop\sorting\css\style.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1 align="center" ><b>Sorting Visualizer</b></h1>
+  <div class="row">
+      <div>
+        <span>
+          <label for="input-numbers" style="color: azure">Enter numbers</label>
+          <input type="text" id="input-numbers">
+          <button onclick="pushnumbers()" id="myButton">Submit</button>
+        </span>
+      </div>
+      <div class="container">
+        <div class="slider-container">Speed
+          <input id="speed_input" type="range" min="10" max="400" value="50">
+        </div> 
+        <div id="result"></div>       
+        <div class="buttons-container">
+          <button onclick="executeFunction(1)" class="btn btn-outline-primary btn-dark insertionsort">Insertion Sort</button>
+          <button onclick="executeFunction(2)" class="btn btn-outline-primary btn-dark selectionsort">Selection Sort</button>
+          <button onclick="executeFunction(3)" class="btn btn-outline-primary btn-dark selectionsort">Bubble Sort</button>
+          <button onclick="executeFunction(4)" class="btn btn-outline-primary btn-dark mergesort">Merge Sort</button>
+          <button onclick="executeFunction(5)" class="btn btn-outline-primary btn-dark quicksort">Quick Sort</button>
+        </div>
+      </div>
+    </div> 
+    <div id="bar-graph" style="height: 75%; width: 50%"></div>
+    <script src="sorting.js"></script>
+    <script src="bubble.js"></script>
+    <script src="insertion.js"></script>
+    <script src="merge.js"></script>
+    <script src="quick.js"></script>
+    <script src="selection.js"></script>
+</body>
+</html>
